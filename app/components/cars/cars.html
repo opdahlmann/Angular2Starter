@@ -2,11 +2,19 @@
 <br>
 <ul>
   <li *ngFor="let item of cars | async"
-    (click)="select(item)">
-    {{ item.brand }}
+    (click)="select(item)" style="cursor: pointer">
+    <u>{{ item.brand }}</u>
   </li>
 </ul>
 
+<br>  
+
+
+
+<div class="alert alert-info" *ngIf="selectedCar" [@showSelected]="showSelected">
+  <button type="button" class="close" (click)="closeSelected()">&times;</button>
+  <strong>{{selectedCar.brand}}</strong> {{selectedCar.color}}
+</div>
 
 
 

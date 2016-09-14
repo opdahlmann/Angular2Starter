@@ -16,5 +16,19 @@ export default [
         transform: 'translateX(100%)'
       }))
     ])
+  ]),
+  trigger('showSelected', [
+    state('in', style({opacity: 1})),
+    transition('void => *', [
+      style({
+        opacity: 0
+      }),
+      animate('0.4s ease-in')
+    ]),
+    transition('* => void', [
+      animate('0.4s 10 ease-out', style({
+        opacity: 0
+      }))
+    ])
   ])
 ];

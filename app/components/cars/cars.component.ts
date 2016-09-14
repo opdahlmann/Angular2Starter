@@ -18,7 +18,7 @@ import {Title} from "@angular/platform-browser";
     moduleId: module.id,
     selector: 'cars',
     templateUrl: 'cars.html',
-    animations: animations
+    animations: (animations)
 })
 export class CarsComponent implements OnInit {
     cars: Promise<Car[]>;
@@ -38,5 +38,9 @@ export class CarsComponent implements OnInit {
 
   select(car: Car) {
     this.selectedCar = car;
+  }
+
+  closeSelected() {
+    this.selectedCar = null;
   }
 }
