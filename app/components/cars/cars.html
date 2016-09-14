@@ -1,8 +1,13 @@
-
+<h2 [@flyInOut]="'in'">Cars</h2>
+<br>
 <ul>
   <li *ngFor="let item of cars | async"
     (click)="select(item)">
     {{ item.brand }}
   </li>
 </ul>
+
+
+
+
 

@@ -5,6 +5,7 @@ This is a startup project for Angular 2.0.0-rc6 in vscode or Visual Studio. you 
 - Services with observables and promise
 - Routing
 - ngModule
+- Animations
 
 ## Install
 

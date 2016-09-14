@@ -1,12 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { 
+  Component, 
+  OnInit,
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+  group
+} from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 import { Car, CarsService} from '../../services/cars.service'
 import { LoggerService } from '../../services/logger.service';
+import animations from './animations';
+// import flyInOut from './flyInOut';
 
 @Component({
     moduleId: module.id,
     selector: 'cars',
-    templateUrl: 'cars.html'
+    templateUrl: 'cars.html',
+    animations: animations
 })
 export class CarsComponent implements OnInit {
     cars: Promise<Car[]>;
