@@ -9,11 +9,13 @@ This is a startup project for Angular 2.0.0-rc6 in vscode or Visual Studio. you 
 
 ## Install
 
-Download the zipadd all the files to the root of your project folder then run:
+Download the zip add all the files to the root of your project folder then run:
 
 ```sh
 npm install
 ```
+(or do a git clone https://github.com/opdahlmann/Angular2Starter.git from your folder)
+
 
 Start the project by navigating to your project folder in cmd. and type
 
