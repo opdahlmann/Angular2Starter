@@ -12,7 +12,7 @@ import { Observable } from 'rxjs/Rx';
 import { Car, CarsService} from '../../services/cars.service'
 import { LoggerService } from '../../services/logger.service';
 import animations from './animations';
-// import flyInOut from './flyInOut';
+import {Title} from "@angular/platform-browser";
 
 @Component({
     moduleId: module.id,
@@ -24,10 +24,11 @@ export class CarsComponent implements OnInit {
     cars: Promise<Car[]>;
     selectedCar: Car;
     
-    constructor(private _carsService: CarsService, private _loggerService: LoggerService) {   _loggerService.log('Cars Component loading success'); }
+    constructor(private _carsService: CarsService, private _loggerService: LoggerService,private _title : Title) {   _loggerService.log('Cars Component loading success'); }
 
     ngOnInit() 
     { 
+      this._title.setTitle('Cars');
         this.getCars();
     }
 

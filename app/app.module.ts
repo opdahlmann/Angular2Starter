@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserModule, Title  } from '@angular/platform-browser';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
@@ -27,7 +27,7 @@ import { CarsComponent }      from './components/cars/cars.component';
     ],
     exports: [ AppComponent ],
     declarations: [AppComponent, HomeComponent, MenuComponent, CarsComponent],
-    providers: [LoggerService, CarsService],
+    providers: [LoggerService, CarsService, Title],
     bootstrap: [AppComponent],
 })
 
