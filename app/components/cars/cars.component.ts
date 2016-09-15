@@ -11,7 +11,7 @@ import {
 import { Observable } from 'rxjs/Rx';
 import { Car, CarsService} from '../../services/cars.service'
 import { LoggerService } from '../../services/logger.service';
-import animations from './animations';
+import animations from '../../shared/animations';
 import {Title} from "@angular/platform-browser";
 
 @Component({

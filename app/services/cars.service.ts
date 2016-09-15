@@ -5,13 +5,24 @@ import { LoggerService } from './logger.service';
 // export class Car {
 //   constructor(public id: number, public name: string, public side: string) { }
 // }
-export class Car {
-    constructor(
-        public brand: string,
-        public color: string
-    ){}
+// export class Car {
+//     brand: string;
+//     color: string;
+//     constructor(brand: string, color: string){
+//       this.brand = brand;
+//       this.color = color;
+//     }   
+// }
+  
+export interface ICar{  
+    brand: string;
+    color: string;
 }
 
+export class Car implements ICar {  
+    constructor (public brand: string, public color: string) {
+    }
+} 
 
 
 @Injectable()
