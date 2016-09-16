@@ -2,17 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { LoggerService } from './logger.service';
-// export class Car {
-//   constructor(public id: number, public name: string, public side: string) { }
-// }
-// export class Car {
-//     brand: string;
-//     color: string;
-//     constructor(brand: string, color: string){
-//       this.brand = brand;
-//       this.color = color;
-//     }   
-// }
+
   
 export interface ICar{  
     brand: string;
